@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seputar Diabetes Melitus - Klinik Diabetes</title>
+    <link rel="icon" href="assets/img/logokampuss.png" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <style>
+      .container {
+        padding: 20px;
+      }
+      .jumbotron {
+        background-color: #f4f4f4; /* Warna latar belakang yang sama dengan sidebar */
+        padding: 20px; /* Padding untuk ruang di dalam jumbotron */
+      }
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card h3 {
+        margin-bottom: 10px;
+      }
+      .card p {
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        max-width: 500px; /* Atur lebar maksimum gambar */
+        max-height: 300px; /* Atur tinggi maksimum gambar */
+      }
+      .card ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .card ul li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="dashboard.html">
+          <img src="assets/img/logo.png" alt="Your Logo" height="100" />
+        </a>
+        <!-- Clock -->
+        <span
+          class="navbar-text mx-auto"
+          id="clock"
+          style="font-size: 24px; color: white"></span>
+        <!-- Buttons -->
+        <div class="d-flex">
+          <button class="btn btn-info me-2">
+            <a href="dashboard.html" style="text-decoration: none; color: white"
+              >Dashboard</a
+            >
+          </button>
+          <button
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#logoutModal">
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <div class="content">
+        <center class="mb-5 mt-3"><h1>Seputar Diabetes Melitus</h1></center>
+        <div class="card">
+          <h3 class="card-title">Mitos Dan Fakta</h3>
+          <img
+            src="assets/img/mitos dan fakta.jpg"
+            alt="Diabetes Tipe 1"
+            class="card-img-top" />
+          <div class="card-body">
+            <p class="card-text" style="text-align: justify">
+              Pernah dengar mitos seperti perempuan dengan diabetes tidak bisa
+              mengandung, atau orang diabetes tidak bisa menjadi donor darah,
+              atau bahkan diabetes bukan masalah besar? Mari kita simak jawaban
+              dari Kementrian Kesehatan Direktorat Pengendalian Penyakit Tidak
+              Menular.
+            </p>
+
+            <p>Mitos: “Diabetes bukan masalah besar.”</p>
+            <p>
+              Fakta: Jika dibiarkan tidak diperiksa, diabetes dapat menyebabkan
+              komplikasi serius dan menyebabkan kematian lebih cepat dari
+              seharusnya. Diabetes adalah salah satu dari 8 penyakit utama yang
+              mengakibatkan kematian pada orang dewasa. Menderita diabetes
+              memperbesar kemungkinan 2 kali lebih besar terkena serangan
+              jantung. Diabetes adalah penyebab utama kebutaan, gagal ginjal,
+              amputasi tungkai bawah, dan beberapa akibat jangka panjang yang
+              membuat mutu hidup menjadi lebih rendah.
+            </p>
+            <p>Mitos: “Orang dengan diabetes harus melakukan diet khusus.”</p>
+            <p>
+              Fakta: Diet makanan sehat bermanfaat bagi siapapun, termasuk orang
+              dengan diabetes. Pola makanan sehat harus mengandung biji-bijian,
+              sayuran dan buah, menghindari lemak trans, dan membatasi lemak
+              larus dan karbohidrat olahan, terutama gula.
+            </p>
+            <p>
+              Mitos: “Makanan ‘ramah diabetes’ dan ‘bebas gula’ baik bagi
+              penderita diabetes.”
+            </p>
+            <p>
+              Fakta: Makanan bebas gula kerap mengandung sejumlah kalori dan
+              gula bahkan karbohidrat. Jadi mulailah membaca dengan teliti label
+              makanan. Ingat, kata-kata ‘natural’ atau ‘asli alami’ tidak selalu
+              berate aman.
+            </p>
+            <p>Mitos:“Penyandang diabetes tidak dapat menyumbangkan darah.”</p>
+            <p>
+              Fakta: Orang Penyandang diabetes tetap dapat menyumbangkan darah
+              (donor darah) selama kadar gula darahnya terkendali.
+            </p>
+            <p>Mitos: “Perempuan penyandang diabetes sebaiknya tidak hamil.”</p>
+            <p>
+              Fakta: Dengan control atau pengendalian gula darah yang baik,
+              perempuan penyandang diabetes tetap dapat mengandung dan
+              melahirkan bayi yang sehat.
+            </p>
+            <p>
+              Mitos: “Diabetes pada ibu hamil tak perlu dianggap serius karena
+              akan menghilang begitu melahirkan.”
+            </p>
+            <p>
+              Fakta: Pada 50-70% ibu hamil yang memiliki diabetes (diabetes
+              gestational) saat mengandung, dia berisiko menderita diabetes tipe
+              2 dalam waktu 5-10 tahun setelah melahirkan. Jika diabetes
+              dibiarkan tanpa pengobatan, anak-anak yang lahir dari ibu yang
+              menderita diabetes selama hamil berisiko menderita diabetes tipe 2
+              di usia dewasa. Diabetes gestational hraus mendapat perhatian
+              serius dan pengobatan.
+            </p>
+            <p>
+              Mitos: “Penggunaan insulin saat hamil dapat memberi dampak buruk
+              bagi bayi.”
+            </p>
+            <p>
+              Fakta: Insulin tidak memberi dampak buruk pada bayi, malah kadar
+              gula yang tinggi bisa memberi dampak buruk pada bayi. Hanya
+              sedikit sekali insulin yang memasuki plasenta (dbandingkan tablet
+              oral) sehingga aman digunakan untuk mengendalikan akdar glukosa
+              dalam darah selama kehamilan karena pola makan dan olahraga saja
+              tidak cukup.
+            </p>
+            <p>
+              Mitos: “Penyandang diabetes dapat makan gandum tetap tidak dapat
+              makan nasi.”
+            </p>
+            <p>
+              Fakta: Tidak benar. Baik gandum maupun nasi mengandung kadar
+              karbohidrat (-70%) dan indeks glikemi yang sama. Keduanya
+              meningkatkan kadar gula secara sama. Dengan porsi terbatas,
+              keduanya dapat dikonsumsi. 80% Penyakit jantung, stroke dan
+              diabetes tipe 2 dapat dicegah 1 dari 11 orang dewasa menderita
+              diabetes di 2015.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">
+            Diabetes Tipe 2 Bisa Diwariskan Secara Genetis
+          </h3>
+          <img
+            src="assets/img/Diabetes Tipe 2 Bisa Diwariskan Secara Genetis.png"
+            alt="Diabetes Tipe 1"
+            class="card-img-top" />
+          <div class="card-body">
+            <p class="card-text">
+              Diabetes Tipe 2 dikenal sebagai penyakit yang disebabkan oleh pola
+              makan tidak sehat dan kelebihan berat badan. Namun ilmuwan Jerman
+              membuktikan lewat tikus percobaan, Diabetes Tipe 2 juga bisa
+              diwariskan secara genetis. Seperti sebuah epidemi: hampir sepuluh
+              persen penduduk dunia mengidap diabetes tipe 2. Tendensinya,
+              meningkat makin cepat. Kegemukan dan faktor genetis memainkan
+              peran penting. Namun, para ilmuwan menduga ada lebih banyak faktor
+              pemicu kenaikan kasusnya. Seperti sebuah epidemi: hampir sepuluh
+              persen penduduk dunia mengidap diabetes tipe 2. Tendensinya,
+              meningkat makin cepat. Kegemukan dan faktor genetis memainkan
+              peran penting. Namun, para ilmuwan menduga ada lebih banyak faktor
+              pemicu kenaikan kasusnya.
+            </p>
+            <p>
+              Seperti sebuah epidemi: hampir sepuluh persen penduduk dunia
+              mengidap diabetes tipe 2. Tendensinya, meningkat makin cepat.
+              Kegemukan dan faktor genetis memainkan peran penting. Namun, para
+              ilmuwan menduga ada lebih banyak faktor pemicu kenaikan kasusnya.
+              Ada tikus kurus dan gemuk, yang mengembangkan jenis penyakit
+              seperti manusia. Termasuk diabetes. Sebagaimana kembar identik,
+              tikus ini semua memiliki gen yang sama. Jika kondisinya berbeda,
+              berarti penyebabnya bukan terletak pada genomnya. Para peneliti
+              memberi makan tikus dengan diet kaya kalori selama enam minggu.
+              Sebagai dampak pola makan yang salah, tikus menjadi tambun dan
+              mengembangkan gejala diabetes - mirip seperti manusia. Ada dugaan:
+              tikus bisa mewariskan karakteristik ini pada keturunannya.
+            </p>
+            <h5>Pewarisan Penyakit Secara Genetis</h5>
+            <p>
+              Pewarisannya hanya bisa lewat sel telur dan sperma. Untuk
+              menyingkirkan pengaruh lainnya dari tikus induk tambun, peneliti
+              hanya mengambil sperma dan sel telur untuk inseminasi buatan. 24
+              jam kemudian telur yang telah dibuahi berkembang jadi embrio
+              tikus. Para peneliti menaruhnya pada rahim ibu pengganti.
+            </p>
+            <p>
+              Ibu tikus yang dititipi embrio ini sehat dan langsing. Tak hanya
+              melahirkannya, induk titipan ini juga merawat anak-anak tikus.
+              Induk tikus tambun tidak lagi memainkan peranan pada anak-anaknya.
+              Jadi mereka tidak bisa menjadi panutan pola makan yang buruk.
+              Johannes Beckers, peneliti dibetes mengatakan: "Kami dapat
+              mengesampingkan, bahwa kontak sosial dengan orang tua, efek rahim
+              atau bahkan selama proses menyusui, memainkan peranan. Kami dapat
+              menyingkirkan kemungkinan bahwa, bakteri usus ditularkan dari satu
+              generasi ke berikutnya. Artinya semua perubahan yang kami amati
+              dari generasi anak tikus ini, hanya berkaitan dengan informasi
+              yang ada di sel germinalnya."
+            </p>
+            <h5>Diabetes Dampak Gaya Hidup</h5>
+            <p>
+              Para peneliti sekarang mengamati perkembangan lebih lanjut dari
+              anak-anak tikus ini, dan membandingkannya dengan anak tikus dari
+              induk yang ramping. Semua mendapat makanan yang sama. Perlu
+              diingat, tikus-tikus ini secara genetis identik dan tumbuh dalam
+              kondisi lingkungan yang sama. Satu-satunya perbedaan: orang tua
+              biologisnya gemuk atau langsing. Dan ini nampak jelas menentukan.
+            </p>
+            <p>
+              Keturunan tikus gemuk lebih cepat mengidap diabetes, ketimbang
+              anak tikus yang induknya ramping. Kecenderungan ini hanya bisa
+              diwariskan. Namun, kecenderungan ini didapat dari orang tua yang
+              mula-mula memiliki pola makan yang salah. Ayah dan ibu meneruskan
+              kecenderungan diabetes dan kelebihan berat badan pada
+              anak-anaknya.(DW Inovator)
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Diabetes Melitus Di Usia Muda</h3>
+          <img
+            src="assets/img/diabetes melitus di usia muda.jpg"
+            alt="Diabetes Tipe 1"
+            class="card-img-top" />
+          <div class="card-body">
+            <p class="card-text">
+              Diabetes mellitus (DM) adalah penyakit kronis dan berlangsung
+              jangka panjang dengan ditandai oleh meningkatnya kadar gula darah
+              (glukosa) hingga diatas nilai normal. Diabetes mellitus bisa
+              menyerang siapa saja, termasuk yang masih berada di usia muda.
+              Diabetes mellitus terbagi menjadi 2 tipe, tipe 1 dan tipe 2. Pada
+              diabetes mellitus tipe 1, penyakit ini terjadi disebabkan oleh
+              kelainan autoimun yang menyebabkan pankreas tidak dapat
+              memproduksi insulin. Lalu pada diabetes mellitus tipe 2, penyakit
+              ini muncul sebagai dampak dari pola makan yang tidak sehat, hingga
+              tubuh tidak mampu lagi mengontrol asupan gula.
+            </p>
+            <h5>Apa yang Menjadi Penyebab Diabetes di Usia Muda?</h5>
+            <p>
+              Mayoritas orang pada usia muda cenderung kurang peduli akan apa
+              yang dikonsumsinya, sehingga seringkali mempunyai pola makan yang
+              tidak sehat. Makanan cepat saji (fast food), dan makanan-makanan
+              yang manis seperti kue, donat, hingga minuman boba lebih disukai
+              anak muda dibandingkan dengan makanan dan minuman yang sehat. Maka
+              dari itu, tak ayal bila orang dengan usia yang masih muda akan
+              terkena diabetes mellitus jika kebiasaan tersebut tidak segera
+              diperbaiki.
+            </p>
+            <p>
+              Saat gula dikonsumsi secara berlebihan, maka resistensi insulin
+              dalam tubuh akan meningkat. Peningkatan resistensi insulin inilah
+              yang menyebabkan tubuh tidak mampu memproses kelebihan gula secara
+              optimal. Kenaikan ladar gula dalam darah yang tak terelakkan tidak
+              menutup kemungkinan akan memicu penyakit diabetes mellitus tipe 2.
+              Di sisi lain, selain pola makan, ada beberapa faktor lain yang
+              dapat menambah risiko berkembangnya diabetes mellitus, seperti
+              faktor usia, berat badan, genetik dan gaya hidup.
+            </p>
+            <p>
+              Untuk diabetes mellitus tipe 1, meskipun hingga saat ini belum
+              dapat diketahui secara pasti apa yang menjadi penyebabnya.
+              Penyakit autoimun diketahui ikut berkontribusi , karena membuat
+              sistem imun pada tubuh menyerang dan merusak sel beta yang
+              bertugas menghasilkan insulin di pancreas. Lalu faktor lain yang
+              dapat meningkatkan risiko munculnya penyakit ini, diantaranya
+              faktor genetik dan faktor lingkungan.
+            </p>
+            <h5>Bagaimana Gejala Diabetes di Usia Muda?</h5>
+            <p>
+              Pada dasarnya, diabetes tipe 1 dan tipe 2 memilki ciri-ciri yang
+              hampir sama. Yang menjadi perbedaan adalah pada penderita diabetes
+              tipe 1 penderitanya berkemunginan akan mengalami penurunan berat
+              badan walaupun tidak melakukan diet. Perlu diingat, bahwa gejala
+              diabetes mellitus di usia muda berkembang secara bertahap dalam
+              jangka waktu beberapa bulan atau mungkin beberapa tahun, hingga
+              tidak sedikit orang yang terkena diabetes baru bisa terdeteksi
+              melalui medical check-up.
+            </p>
+            <ul>
+              Berikut adalah beberapa ciri-ciri diabetes di usia muda yang
+              secara umum dialami, yaitu:
+              <li>- Mudah lapar dan mudah haus</li>
+              <li>- Disfungsi Ereksi</li>
+              <li>- Penglihatan kabur</li>
+              <li>- Kekuatan otot melemah</li>
+              <li>- Libido menurun</li>
+              <li>- Mudah lelah</li>
+              <li>- Perubahan suasana hati yang tiba-tiba</li>
+              <li>- Jumlah urin meningkat saat buang air kecil</li>
+              <li>
+                - Membutuhkan waktu lama untuk kering dan sembuh bila terluka
+              </li>
+            </ul>
+            <p>
+              Jaga diri dari diabetes mellitus pada usia muda. Lakukan pola
+              hidup sehat dalam keseharian dan perbanyak komsumsi makanan sehat
+              dan makanan bergizi cukup. Lakukan medical check up secara
+              berkala, dan segera konsultasikan dengan dokter bila merasakan
+              gejala diabetes mellitus untuk segera mendapatkan pengobatan yang
+              tepat. Walaupun penyakit diabetes tidak dapat disembuhkan, akan
+              tetapi para penderita diabetes masih bisa mecapai dan meraih
+              kualitas hidup yang optimal apabila mampu mengelola penyakitnya
+              dengan baik. Download aplikasi IHC Telemed di App Store dan Google
+              Play dan nikmati layanan konsultasi langsung dengan dokter IHC
+              dimanapun dan kapanpun. IHC Telemed, sehat dalam genggaman.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Apa Saja Komplikasi Dan Akibat Dari Diabetes?</h3>
+          <img
+            src="assets/img/apa saja.png"
+            alt="Diabetes Tipe 1"
+            class="card-img-top" />
+          <div class="card-body">
+            <p class="card-text"><b>Komplikasi Diabetes berkembang secara bertahap.</b> Ketika terlalu banyak gula menetap dalam aliran darah untuk waktu yang lama, hal itu dapat mempengaruhi pembuluh darah, saraf, mata, ginjal dan sistem kardiovaskular. Komplikasi termasuk serangan jantung dan stroke, infeksi kaki yang berat (menyebabkan gangren, dapat mengakibatkan amputasi), gagal ginjal stadium akhir dan disfungsi seksual. Setelah 10-15 tahun dari waktu terdiagnosis, prevalensi semua komplikasi Diabetes meningkat tajam.</p>
+          </div>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Pola Makan Yang Dianjurkan Uuntuk Pasien Diabetes Melitus</h3>
+            <img
+              src="assets/img/Pola Makan yang dianjurkan untuk Pasien Diabetes Melitus.jpg"
+              alt="Diabetes Tipe 1"
+              class="card-img-top" />
+            <div class="card-body">
+              <p class="card-text">
+                Prevalensi penyakit degeneratif di Indonesia meningkat setiap tahunnya. Salah satunya diabetes melitus (DM), dimana Indonesia menempati urutan ke-6 dengan jumlah pasien DM tertinggi di dunia. Diabetes melitus merupakan salah satu 'silent killer' karena pada tahap awal, sering tidak menunjukkan gejala. Pada pasien DM, terdapat kondisi hiperglikemia yang lebih lanjut dapat menyebabkan berbagai komplikasi, sehingga perlu pengendalian kadar glukosa darah sebagai upaya pencegahan. Pengendalian kadar glukosa darah dapat dilakukan melalui terapi farmakologis (menggunakan obat-obatan) maupun non farmakologis. Penelitian menunjukkan terapi non farmakologis melalui pengaturan pola makan efektif mengendalikan kadar glukosa darah, profil lipid, dan tekanan darah pada penderita DM.
+              </p>
+              <p>
+                Strategi dalam pengaturan pola makan yang dapat dilakukan untuk membantu mengendalikan kadar glukosa darah salah satunya melalui pemilihan konsumsi makanan yang sehat dan seimbang untuk mengontrol kadar gula darah.
+              </p>
+              <ul>
+                Berikut adalah beberapa prinsip dasar pola makan yang dianjurkan untuk pasien DM:
+                <li><b>- Memilih Karbohidrat Kompleks.</b> Pilih sumber karbohidrat kompleks seperti biji-bijian utuh, nasi merah, roti gandum utuh, dan oatmeal. Karbohidrat kompleks memiliki serat yang lebih tinggi dan dapat membantu mengendalikan penyerapan gula darah.</li>
+                <li><b>- Menghindari Karbohidrat Sederhana.</b> Hindari atau batasi konsumsi karbohidrat sederhana, seperti gula, permen, kue, produk olahan tepung, dan minuman manis/kemasan. Karbohidrat sederhana dapat menyebabkan lonjakan gula darah yang cepat.</li>
+                <li><b>- Menghindari Minuman Berkalori Tinggi.</b> Pilih air mineral, teh tanpa gula, atau kopi tanpa gula. Konsumsi air mineral sebagai minuman utama. Batasi konsumsi minuman manis dan beralkohol</li>
+                <li><b>- Memilih Protein Sehat.</b> Pilih sumber protein rendah lemak, seperti ikan, daging tanpa lemak, telur, dan tahu/tempe. Hindari produk daging olahan yang tinggi lemak jenuh (kornet, sosis, ikan kalengan)</li>
+                <li><b>- Memilih Lemak Sehat.</b> Pilih lemak sehat, seperti lemak tak jenuh yang terkandung dalam alpukat, kacang-kacangan, ikan, dan minyak zaitun. Hindari lemak jenuh dan trans, seperti yang ditemukan dalam makanan olahan dan makanan cepat saji.</li>
+                <li><b>- Pentingnya Serat.</b> Konsumsi makanan yang tinggi serat, seperti sayuran hijau, buah-buahan, kacang-kacangan, dan biji-bijian utuh. Serat membantu mengontrol kadar gula darah dan memberikan rasa kenyang lebih lama.</li>
+                <li><b>- Perhatikan Indeks Glikemik.</b> Pilih makanan dengan indeks glikemik rendah untuk membantu mengontrol kadar gula darah. Makanan dengan indeks glikemik rendah cenderung menyebabkan peningkatan gula darah yang lebih lambat, sehingga dapat membantu menjaga kadar gula darah tetap stabil. Contoh makanan indeks glikemik rendah diantaranya biji-bijian utuh (quinoa, beras merah), sayuran, kacang-kacangan, produk susu low fat, produk gandum utuh (roti gandu utuh, oats), makanan dengan protein tinggi (daging tanpa olemak, ikan, ayam tanpa kulit).</li>
+                <li><b>- Kendalikan Porsi Makan.</b> Perhatikan ukuran porsi makan dan pertimbangkan untuk menggunakan alat ukur makanan jika diperlukan. Kendalikan porsi makan. Jangan terlalu banyak mengonsumsi karbohidrat dalam satu waktu. Perhatikan ukuran porsi untuk mencegah overeating. Gunakan piring kecil dan hindari makan berlebihan. Konsumsi makan porsi kecil namun sering mampu membantu mengotrol kadar gula darah harian. Dapat dilakukan dengan konsumsi makan besar 3x sehari ( 07.00, 12.00, 18.00) serta konsumsi makan selingan 2x sehari (10.00, 14.00). hindari mengkonsumsi makanan banyak dalam satu waktu, karena ini dapat memicu lonjakan kadar gula darah.</li>
+                <li><b>- Konsultasikan dengan Ahli Gizi atau Dokter.</b> Konsultasikan pola makan dengan ahli gizi atau dokter untuk mendapatkan rekomendasi yang sesuai dengan kebutuhan spesifik pasien.
+
+                    Secara umum, prinsip pola makan untuk pasien DM adalah 3J (jumlah, jenis, jam). Jumlah adalah dengan memperhatikan jumlah kalori dan porsi makan agar tetap seimbang. Jenis adalah memilih jenis karbohidrat kompleks dan berserat, memilih makanan rendah indeks glikemik, meilih protein rendah lemak, dan lemak sehat. Jam adalah makan dalam porsi yang teratur sepanjang hari dan sesuai jadwal jam makan untuk menghindari lonjakan gula darah. Hal ini dapat dilakukan dengan pemantauan waktu makan dan pilihan camilan yang sehat</li>
+              </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Logout Modal -->
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      aria-labelledby="logoutModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="logoutModalLabel">
+              Logout Confirmation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">Are you sure you want to logout?</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-danger" onclick="logout()">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script>
+      function logout() {
+        // Perform logout action here
+        alert("Logout successful!");
+        // Redirect to login page
+        window.location.href = "login.html";
+      }
+
+      function updateClock() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        // Formatting for display
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        var timeString = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("clock").innerHTML = timeString;
+
+        // Update every second
+        setTimeout(updateClock, 1000);
+      }
+
+      // Run function once to start clock
+      updateClock();
+    </script>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p>&copy; 2024 STIKES RS Husada. All rights reserved.</p>
+        </div>
+      </footer>
+  </body>
+</html>
